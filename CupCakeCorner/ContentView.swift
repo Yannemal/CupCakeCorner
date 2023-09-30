@@ -8,54 +8,32 @@
 import SwiftUI
 // MARK: - other class / structs
 
-struct Response : Codable {
-    var results : [Result]
-}
 
-struct Result : Codable {
-    var trackID : Int
-    var trackName : String
-    var collectionName : String
-}
 
 struct ContentView: View {
 // MARK: - DATA:
-    @State private var results = [Result]()
-
+    
     var body: some View {
-// MARK: - someView
-   
-        List(results, id: \.trackID) { item in
-            VStack(alignment: .leading) {
-                Text(item.trackName)
-                    .font(.headline)
-                Text(item.collectionName)
-            }
+        // MARK: - someView
+        AsyncImage(url: URL(string: "https://hws.dev/img/bad.png")) { phase in
+            if let image = phase.image {
+                image
+                    .resizable()
+                    .scaledToFit()
+            } else if phase.error != nil {
+                      Image(systemName: "arrow.down.message.fill")
+                            .scaleEffect(4.0)
+                            .foregroundColor(.red)
+        } else {
+            ProgressView()
+          }
         }
-        .task {
-            await loadData()
-        }
-        
+        .frame(width: 200, height: 200)
+          
+      
     } //end someView
 // MARK: - METHODS
     
-    func loadData() async {
-        guard let url = URL(string: /* API call */ "https://itunes.apple.com/search?term=taylor+swift&entity=song") else 
-        {
-            print("invalid URL")
-            return
-        }
-        // a sleep might occur an error might occur
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url)
-            
-            if let decodedResponse = try? JSONDecoder().decode(Response.self, from: data) {
-                results = decodedResponse.results
-            }
-        } catch {
-            print("invalid Data")
-        }
-    }
     
 } //end struct
 
