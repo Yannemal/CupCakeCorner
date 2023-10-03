@@ -14,6 +14,7 @@
 		7CBC1D962AC98CF3002BFA9F /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBC1D952AC98CF3002BFA9F /* Order.swift */; };
 		7CBC1D982AC99DF3002BFA9F /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBC1D972AC99DF3002BFA9F /* AddressView.swift */; };
 		7CBC1D9A2AC9A919002BFA9F /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBC1D992AC9A919002BFA9F /* CheckoutView.swift */; };
+		7CECF1502ACBDCFB00D6837B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CECF14F2ACBDCFB00D6837B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		7CBC1D952AC98CF3002BFA9F /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		7CBC1D972AC99DF3002BFA9F /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		7CBC1D992AC9A919002BFA9F /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		7CECF14F2ACBDCFB00D6837B /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				7CBC1D872AC69854002BFA9F /* ContentView.swift */,
 				7CBC1D972AC99DF3002BFA9F /* AddressView.swift */,
 				7CBC1D992AC9A919002BFA9F /* CheckoutView.swift */,
+				7CECF14F2ACBDCFB00D6837B /* LaunchScreen.storyboard */,
 			);
 			path = VIEWS;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CECF1502ACBDCFB00D6837B /* LaunchScreen.storyboard in Resources */,
 				7CBC1D8D2AC69854002BFA9F /* Preview Assets.xcassets in Resources */,
 				7CBC1D8A2AC69854002BFA9F /* Assets.xcassets in Resources */,
 			);
@@ -303,9 +307,12 @@
 				DEVELOPMENT_TEAM = 26ZTB6MRV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CupCakeCorner;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,9 +339,12 @@
 				DEVELOPMENT_TEAM = 26ZTB6MRV7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CupCakeCorner;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

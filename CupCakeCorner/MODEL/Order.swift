@@ -69,7 +69,7 @@ class Order: ObservableObject, Codable {
     /* ************************************************************* */
 
     //  case type, quantity, extraFrosting, addSprinkles, name, streetAddress, city, zip
-    
+    // below are the protocol stubs to show how encode and decode will work when Order the class receives the call to do so - mandatory 
     init() { }
     
     func encode(to encoder: Encoder) throws {
